@@ -10,7 +10,11 @@ class DemoQA(BasePage):
         self.icon = WebElement(driver, locator='#app > header > a')
         self.btn_elements = WebElement(driver, locator='#app > div > div > div.home-body > div > div:nth-child(1)')
         self.text_footer = WebElement(driver, locator='#app > footer > span')
-        self.text_center_elements = WebElement(driver, locator='#app > div > div > div.row > div.col-12.mt-4.col-md-6')
+        self.btn_first_d = WebElement(driver, locator='div:nth-child(1) > div > div > div:nth-child(1) > span > div')
+        self.text_box_btn_d = WebElement(driver, locator='div:nth-child(1) > div #item-0')
+
+
+
 
     # def exist_icon(self):
     #     try:
