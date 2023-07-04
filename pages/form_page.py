@@ -16,6 +16,7 @@ class FormPage(BasePage):
         self.btn_close_modal = WebElement(driver, locator='#closeLargeModal')
         self.hobbies_check = WebElement(driver, locator='#hobbies-checkbox-2')
         self.btn_current_address = WebElement(driver, locator='#currentAddress')
-        self.drop_list = WebElement(driver, locator='#state')
-        self.states_list = WebElement(driver, locator='#state > div > div.css-1hwfws3 > div.css-1uccc91-singleValue')
-        # //*[contains(text(),'NCR')]
+        self.btn_state = WebElement(driver, locator='#state')
+        self.inp_state = WebElement(driver, locator='#react-select-3-input')
+        self.btn_city = WebElement(driver, locator='#stateCity-wrapper > div:nth-child(3)')
+        self.inp_city = WebElement(driver,"//*[contains(text(),'Delhi')]", 'xpath')
